@@ -10,7 +10,8 @@
   "author": "",
   "license": "MIT",
   "dependencies": {
-    "svelte": "^3.49.0"
+    "svelte": "^3.49.0",
+    "typescript": "^5.0.4"
   },
   "devDependencies": {
     "@babel/core": "^7.18.13",
