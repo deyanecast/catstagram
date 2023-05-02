@@ -1,14 +1,51 @@
 <script>
-    import Comments from './Comments.svelte';
-    export let username;
-    export let location;
-    export let photo;
-    export let postComments;
-    export let comments;
-    export let avatar;
+  import Comments from "./Comments.svelte";
+  export let user;
+  export let username;
+  export let location;
+  export let photo;
+  export let postComments;
+  export let comments;
+  export let avatar;
 </script>
 
-
+<div class="Card">
+  <div class="Card-container">
+    <div class="Card-Header">
+      <div class="Card-user">
+        <img src={avatar} alt={username} />
+        <h2>
+          {username}
+          <span>
+            {location}
+          </span>
+        </h2>
+      </div>
+      <div class="Card-settings">
+        <i class="fas fa-ellipsis-h" />
+      </div>
+    </div>
+    <div class="Card-photo">
+      <figure>
+        <img src={photo} alt={user} />
+      </figure>
+    </div>
+    <div class="Card-icons">
+      <div class="Card-icons-first">
+        <i class="fa-solid fa-heart" />
+        <i class="fa-solid fa-paper-plane" />
+      </div>
+      <div class="Card-icons-second">
+        <i class="fa-solid fa-bookmark" />
+      </div>
+    </div>
+    <div class="Card-description">
+      <h3>{username}</h3>
+      <span>{postComments}</span>
+    </div>
+    <Comments {comments} />
+  </div>
+</div>
 
 <style>
   .Card {
@@ -113,38 +150,3 @@
     }
   }
 </style>
-  
-<div class="Card">
-    <div class="Card-container">
-        <div class="Card-Header">
-            <div class="Card-user">
-                <img src={avatar} alt={username}/>
-                <h2>{username}
-                    <span>{location}</span>
-                </h2>
-            </div>
-            <div class="Card-settings">
-                <i class="fas fa-ellipsis-h" />
-            </div>
-        </div>
-        <div class="Card-photo">
-          <figure>
-              <img src={photo} alt={username}>
-          </figure>
-        </div>
-        <div class="Card-icons">
-          <div class="Card-icons-first">
-              <i class="fa-solid fa-heart"></i>
-              <i class="fa-solid fa-paper-plane"></i>
-          </div>
-          <div class="Card-icons-second">
-              <i class="fa-solid fa-bookmark"></i>
-          </div>
-        </div>
-        <div class="Card-description">
-              <h3>{username}</h3>
-              <span>{postComments}</span>
-        </div>
-          <Comments {comments}/>
-    </div>
-</div>

@@ -8,7 +8,7 @@
     import TimeLine from '../components/TimeLine.svelte';
 
     let data = {};
-    const API  = "https://kittygram-api-lg7jjtvfh.now.sh/";
+    const API  = "https://kittygram-api.now.sh/";
 
     onMount(async () => {
         const response = await fetch(API);
