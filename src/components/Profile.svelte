@@ -1,7 +1,7 @@
 <script>
 
-  export let nickname;
-  export let name;
+  // export let nickname;
+  // export let name;
 
 </script>
 
@@ -34,11 +34,11 @@
 <div class="Profile">
     <div class="Profile-content">
         <div class="Profile-avatar">
-            <img src="https://pbs.twimg.com/profile_images/1563684384749850624/phE6UfLh_400x400.jpg" alt="" />
+            <img src="https://images.unsplash.com/photo-1615590970238-e5968779d4b4?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1770&q=80" alt="" />
         </div>
         <div class="Profile-info">
-            <h2>{nickname}</h2>
-            <span>{name}</span>
+            <h2>Deyane</h2>
+            <span>cast</span>
         </div>
     </div>
 </div>
